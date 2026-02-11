@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>t0-be - Discover What's Next</title>
+<meta name="description" content="Curated ideas, tools, and inspiration for people who want to build, create, and become more.">
+<link rel="canonical" href="https://t0-be.com/">
+<style>
+  :root {
+    --bg: #fafafa; --surface: #ffffff; --border: #e5e7eb;
+    --text: #1f2937; --muted: #6b7280; --accent: #2563eb;
+    --accent-light: #dbeafe;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+         background: var(--bg); color: var(--text); line-height: 1.6; }
+
+  /* Header */
+  header { background: var(--surface); border-bottom: 1px solid var(--border);
+           padding: 16px 24px; }
+  .header-inner { max-width: 1100px; margin: 0 auto;
+                  display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-size: 1.5em; font-weight: 800; color: var(--accent);
+          text-decoration: none; letter-spacing: -0.02em; }
+  nav a { color: var(--muted); text-decoration: none; margin-left: 24px; font-size: 0.9em; }
+  nav a:hover { color: var(--text); }
+
+  /* Hero */
+  .hero { max-width: 1100px; margin: 0 auto; padding: 60px 24px 40px;
+          text-align: center; }
+  .hero h1 { font-size: 2.8em; font-weight: 800; letter-spacing: -0.03em;
+             line-height: 1.1; margin-bottom: 16px; }
+  .hero p { font-size: 1.2em; color: var(--muted); max-width: 600px;
+            margin: 0 auto 32px; }
+
+  /* Ad placeholder */
+  .ad-slot { background: var(--surface); border: 2px dashed var(--border);
+             border-radius: 8px; padding: 20px; text-align: center;
+             color: var(--muted); font-size: 0.8em; margin: 20px auto;
+             max-width: 728px; min-height: 90px;
+             display: flex; align-items: center; justify-content: center; }
+
+  /* Content grid */
+  .content { max-width: 1100px; margin: 0 auto; padding: 0 24px 60px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          gap: 24px; margin-top: 32px; }
+  .card { background: var(--surface); border: 1px solid var(--border);
+          border-radius: 12px; padding: 28px; transition: box-shadow 0.2s; }
+  .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+  .card h2 { font-size: 1.3em; font-weight: 700; margin-bottom: 8px; }
+  .card p { color: var(--muted); font-size: 0.95em; }
+  .card-tag { display: inline-block; padding: 3px 10px; border-radius: 12px;
+              font-size: 0.75em; font-weight: 600; margin-bottom: 12px;
+              background: var(--accent-light); color: var(--accent); }
+
+  /* Footer */
+  footer { background: var(--surface); border-top: 1px solid var(--border);
+           padding: 32px 24px; text-align: center; color: var(--muted);
+           font-size: 0.85em; }
+
+  @media (max-width: 640px) {
+    .hero h1 { font-size: 2em; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<!-- Google AdSense: Replace ca-pub-XXXXX with your publisher ID -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXX" crossorigin="anonymous"></script> -->
+
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">t0-be</a>
+    <nav>
+      <a href="#ideas">Ideas</a>
+      <a href="#tools">Tools</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>What will you build next?</h1>
+  <p>Curated ideas, tools, and resources for builders, creators, and anyone who wants to make something meaningful.</p>
+</section>
+
+<!-- Top Ad Slot -->
+<div class="ad-slot" id="ad-top">
+  <!-- AdSense ad unit goes here -->
+  Ad Space - 728x90 Leaderboard
+</div>
+
+<section class="content" id="ideas">
+  <div class="grid">
+    <div class="card">
+      <span class="card-tag">Side Project</span>
+      <h2>Build a Micro-SaaS</h2>
+      <p>The best side projects solve a small, specific problem really well. Find a niche, build an MVP in a weekend, and validate with real users before scaling.</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">Passive Income</span>
+      <h2>Digital Products That Sell</h2>
+      <p>Templates, courses, ebooks, and tools. Create once, sell forever. The key is solving a painful problem for a specific audience.</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">Automation</span>
+      <h2>Automate Your Workflow</h2>
+      <p>Stop doing repetitive tasks manually. Learn the tools and frameworks that let you build systems that work while you sleep.</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">Open Source</span>
+      <h2>Contribute to Open Source</h2>
+      <p>Build your reputation, learn from the best codebases, and make connections. Start with documentation fixes and work your way up.</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">AI Tools</span>
+      <h2>Build with AI</h2>
+      <p>AI APIs are accessible to everyone now. Build tools that leverage language models, image generation, and automation to create real value.</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">Freelance</span>
+      <h2>Productize Your Skills</h2>
+      <p>Turn your expertise into a productized service. Fixed scope, fixed price, repeatable delivery. Scale without burning out.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Bottom Ad Slot -->
+<div class="ad-slot" id="ad-bottom">
+  <!-- AdSense ad unit goes here -->
+  Ad Space - 728x90 Leaderboard
+</div>
+
+<footer id="about">
+  <p>t0-be.com &mdash; Built for builders.</p>
+  <p style="margin-top: 8px;">&copy; 2026 t0-be. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
