@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Build a Micro-SaaS in a Weekend: The Complete Playbook - t0-be</title>
+<meta name="description" content="A step-by-step playbook for building and launching a micro-SaaS product in a single weekend. From idea validation on Friday night to launch on Sunday.">
+<link rel="canonical" href="https://t0-be.com/blog/build-micro-saas-weekend/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Build a Micro-SaaS in a Weekend: The Complete Playbook">
+<meta property="og:description" content="A step-by-step playbook for building and launching a micro-SaaS product in a single weekend. From idea validation on Friday night to launch on Sunday.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://t0-be.com/blog/build-micro-saas-weekend/">
+<meta property="og:site_name" content="t0-be">
+<meta property="article:published_time" content="2026-02-11">
+<meta property="article:author" content="t0-be">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Build a Micro-SaaS in a Weekend: The Complete Playbook">
+<meta name="twitter:description" content="A step-by-step playbook for building and launching a micro-SaaS product in a single weekend. From idea validation on Friday night to launch on Sunday.">
+
+<style>
+  :root {
+    --bg: #fafafa; --surface: #ffffff; --border: #e5e7eb;
+    --text: #1f2937; --muted: #6b7280; --accent: #2563eb;
+    --accent-light: #dbeafe;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+         background: var(--bg); color: var(--text); line-height: 1.6; }
+
+  /* Header */
+  header { background: var(--surface); border-bottom: 1px solid var(--border);
+           padding: 16px 24px; }
+  .header-inner { max-width: 1100px; margin: 0 auto;
+                  display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-size: 1.5em; font-weight: 800; color: var(--accent);
+          text-decoration: none; letter-spacing: -0.02em; }
+  nav a { color: var(--muted); text-decoration: none; margin-left: 24px; font-size: 0.9em; }
+  nav a:hover { color: var(--text); }
+
+  /* Article */
+  .article-header { max-width: 720px; margin: 0 auto; padding: 48px 24px 0; }
+  .article-header h1 { font-size: 2.4em; font-weight: 800; letter-spacing: -0.03em;
+                       line-height: 1.15; margin-bottom: 16px; }
+  .article-meta { color: var(--muted); font-size: 0.9em; margin-bottom: 8px; }
+  .article-tag { display: inline-block; padding: 3px 10px; border-radius: 12px;
+                 font-size: 0.75em; font-weight: 600; margin-right: 8px; margin-bottom: 16px;
+                 background: var(--accent-light); color: var(--accent); }
+
+  .article-body { max-width: 720px; margin: 0 auto; padding: 32px 24px 48px;
+                  font-size: 1.05em; line-height: 1.8; }
+  .article-body h2 { font-size: 1.5em; font-weight: 700; margin-top: 40px; margin-bottom: 16px;
+                     letter-spacing: -0.01em; }
+  .article-body h3 { font-size: 1.2em; font-weight: 600; margin-top: 28px; margin-bottom: 12px; }
+  .article-body p { margin-bottom: 18px; color: var(--text); }
+  .article-body ul, .article-body ol { margin: 0 0 18px 24px; }
+  .article-body li { margin-bottom: 8px; }
+  .article-body strong { font-weight: 600; }
+  .article-body em { font-style: italic; }
+  .article-body a { color: var(--accent); text-decoration: underline; }
+  .article-body a:hover { text-decoration: none; }
+
+  /* Timeline Box */
+  .timeline-box { background: var(--accent-light); border-radius: 12px; padding: 28px 32px;
+                  margin: 32px 0; border-left: 4px solid var(--accent); }
+  .timeline-box h3 { font-size: 1.15em; font-weight: 700; margin-bottom: 14px; margin-top: 0;
+                     color: var(--accent); }
+  .timeline-box ul { margin: 0 0 0 20px; }
+  .timeline-box li { margin-bottom: 6px; font-size: 0.97em; }
+  .timeline-box li strong { color: var(--text); }
+
+  /* Ad slot */
+  .ad-slot { background: var(--surface); border: 2px dashed var(--border);
+             border-radius: 8px; padding: 20px; text-align: center;
+             color: var(--muted); font-size: 0.8em; margin: 32px auto;
+             max-width: 728px; min-height: 90px;
+             display: flex; align-items: center; justify-content: center; }
+
+  /* Footer */
+  footer { background: var(--surface); border-top: 1px solid var(--border);
+           padding: 32px 24px; text-align: center; color: var(--muted);
+           font-size: 0.85em; }
+
+  @media (max-width: 640px) {
+    .article-header h1 { font-size: 1.8em; }
+    .article-body { font-size: 1em; }
+    .timeline-box { padding: 20px 20px; }
+  }
+</style>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8767713037568144" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">t0-be</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<article>
+  <div class="article-header">
+    <span class="article-tag">Micro-SaaS</span>
+    <span class="article-tag">Guide</span>
+    <h1>Build a Micro-SaaS in a Weekend: The Complete Playbook</h1>
+    <div class="article-meta">By <strong>t0-be</strong> &middot; February 11, 2026 &middot; 10 min read</div>
+  </div>
+
+  <div class="article-body">
+    <p>You do not need six months, a co-founder, or venture capital to launch a software business. Some of the most profitable solo-founder companies on the internet are micro-SaaS products&mdash;small, focused tools that solve one specific problem for a well-defined audience. Many of them were built in a weekend.</p>
+
+    <p>This is not a motivational pep talk. This is a concrete, hour-by-hour playbook for going from zero to a live, paying product between Friday evening and Sunday night. It is the same process used by hundreds of indie hackers who now earn anywhere from a few hundred to tens of thousands of dollars per month from tools they built in 48 hours.</p>
+
+    <h2>What Is Micro-SaaS and Why It Works</h2>
+
+    <p>A micro-SaaS is a software-as-a-service product built and operated by one person or a very small team. It typically targets a narrow niche, charges a modest monthly subscription (usually $9 to $49), and requires minimal ongoing maintenance. Think of it as the opposite of a startup: no fundraising, no hockey-stick growth pressure, and no need to become a unicorn.</p>
+
+    <p>The economics are compelling. A tool that charges $19 per month and acquires just 100 customers generates $1,900 in monthly recurring revenue. That is enough to cover most people's rent. Scale it to 500 customers and you have a six-figure annual business with margins above 90 percent, because your main costs are a domain name and a few cloud services.</p>
+
+    <p>Micro-SaaS is the ideal first business for builders because it rewards <strong>execution speed over perfection</strong>. You do not need a novel idea. You need a real pain point and the ability to ship fast.</p>
+
+    <!-- Ad after intro -->
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:inline-block;width:728px;height:90px"
+           data-ad-client="ca-pub-8767713037568144"
+           data-ad-slot="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <h2>Friday Evening: Validate Your Idea</h2>
+
+    <p>The biggest mistake first-time builders make is starting with code. Do not touch your editor on Friday night. Instead, spend two to three hours finding a problem worth solving and confirming that people will pay for a solution.</p>
+
+    <h3>Where to Find Pain Points</h3>
+
+    <ul>
+      <li><strong>Reddit:</strong> Browse niche subreddits (r/smallbusiness, r/realtors, r/teachers, r/freelance) and search for phrases like "I wish there was," "is there a tool that," or "I hate manually doing." Every complaint is a potential product.</li>
+      <li><strong>Twitter/X:</strong> Search for "someone should build" or "why is there no app for" combined with a niche keyword. People publicly announce their frustrations constantly.</li>
+      <li><strong>Niche forums and Slack groups:</strong> Industry-specific communities are goldmines. Accountants, real estate agents, teachers, and gym owners all have specialized workflows with gaps that generic software does not fill.</li>
+      <li><strong>Your own life:</strong> The most authentic products come from scratching your own itch. What repetitive task did you do this week that software could have handled?</li>
+    </ul>
+
+    <h3>The Three-Question Validation Test</h3>
+
+    <p>Before you commit to an idea, it must pass three checks:</p>
+
+    <ol>
+      <li><strong>Is this a recurring problem?</strong> One-time problems make bad subscription businesses. You need something people deal with weekly or daily.</li>
+      <li><strong>Are people already paying for a workaround?</strong> If they use spreadsheets, hire freelancers, or cobble together multiple tools, they are already spending money. That means willingness to pay is proven.</li>
+      <li><strong>Can I build the core solution in one day?</strong> If the answer is no, scope it down. You are not building a platform. You are building <em>one feature</em> that solves <em>one problem</em>.</li>
+    </ol>
+
+    <p>Write down your idea in a single sentence: <em>"A tool that helps [audience] do [task] without [pain point]."</em> If you cannot fill in that sentence clearly, keep searching.</p>
+
+    <h2>Saturday Morning: Choose Your Tech Stack</h2>
+
+    <p>Speed is everything. You are not evaluating enterprise architectures. You are picking the fastest path from idea to deployed product. Here is the stack that gives solo builders the best speed-to-capability ratio in 2026:</p>
+
+    <ul>
+      <li><strong>Frontend + Backend: Next.js</strong> &mdash; Full-stack React framework with API routes, server-side rendering, and seamless deployment. One codebase for everything.</li>
+      <li><strong>Hosting: Vercel</strong> &mdash; Deploy with a single git push. Free tier is generous enough for launch. Automatic HTTPS, edge functions, and preview deployments included.</li>
+      <li><strong>Database + Auth: Supabase</strong> &mdash; Postgres database, built-in authentication, and a real-time API. You get a production-grade backend in minutes, not hours.</li>
+      <li><strong>Payments: Stripe</strong> &mdash; Subscription billing, checkout pages, and customer portals. The Stripe Checkout integration takes about 30 minutes to implement.</li>
+      <li><strong>Styling: Tailwind CSS</strong> &mdash; Utility-first CSS that lets you build professional-looking interfaces without writing custom stylesheets. Ship a polished UI without being a designer.</li>
+    </ul>
+
+    <p>This is not the only valid stack. If you are more comfortable with Python and Django, or Ruby on Rails, or even a no-code tool like Bubble, use what you know. The goal is to <strong>eliminate decision fatigue</strong> and start building by 10 AM Saturday.</p>
+
+    <p>Spend the first 30 minutes scaffolding your project: initialize the repo, connect Supabase, and create a basic layout. Then move immediately to the core feature.</p>
+
+    <h2>Saturday Afternoon: Build the Core Feature</h2>
+
+    <p>This is the most important section of this entire playbook. You are going to build <strong>one feature</strong>. Not two. Not three. One.</p>
+
+    <p>If you are building a tool that helps freelancers track unpaid invoices, the core feature is: display a dashboard that shows which invoices are overdue and lets you send a reminder email with one click. That is it. You are not building invoice creation, time tracking, expense management, or anything else. One feature, done well.</p>
+
+    <h3>How to Stay Focused</h3>
+
+    <ul>
+      <li><strong>Write down three features you think you need.</strong> Cross out two of them. Build the one that remains.</li>
+      <li><strong>Set a hard deadline.</strong> Your core feature must be functional (not pretty, functional) by 5 PM. If it is not, you scoped too big. Cut further.</li>
+      <li><strong>Use existing components.</strong> Do not build a date picker from scratch. Do not design your own modal. Use component libraries like shadcn/ui or Radix. Lean on Supabase's auth UI components instead of building login forms.</li>
+      <li><strong>Skip edge cases.</strong> Handle the happy path first. Error handling, input validation, and edge cases are post-launch improvements, not launch blockers.</li>
+    </ul>
+
+    <p>By the end of Saturday afternoon, you should have a working prototype: a user can sign up, perform the core action, and see the result. It does not need to look polished. It needs to <em>work</em>.</p>
+
+    <h2>Saturday Evening: Landing Page and Signup Flow</h2>
+
+    <p>Now that the product works, you need a front door. Your landing page has one job: convince a visitor to sign up or start a free trial. It does not need to be elaborate. The highest-converting SaaS landing pages follow a simple formula:</p>
+
+    <ol>
+      <li><strong>Headline:</strong> State the benefit in plain language. "Stop chasing unpaid invoices" is better than "AI-powered accounts receivable management platform."</li>
+      <li><strong>Subheadline:</strong> One sentence explaining how it works. "Track every invoice and send payment reminders in one click."</li>
+      <li><strong>Call to action:</strong> A single prominent button. "Start Free" or "Try It Free" works. Do not ask for a credit card at this stage.</li>
+      <li><strong>Social proof:</strong> If you have no users yet, use a line like "Built by a freelancer who was tired of chasing payments." Authenticity converts.</li>
+      <li><strong>Feature summary:</strong> Three short bullet points or a simple screenshot showing the core feature in action.</li>
+    </ol>
+
+    <p>Connect Stripe for payments. Start with a simple pricing model: a free tier with limited usage and a paid tier at $9 to $19 per month. You can always adjust pricing later. The important thing is to have the payment infrastructure ready before you launch.</p>
+
+    <p>Spend 30 minutes on the landing page copy and design. Spend another 30 minutes testing the full signup-to-payment flow. Then stop. Go to bed. You need energy for tomorrow.</p>
+
+    <h2>Sunday: Launch Day</h2>
+
+    <p>This is the day that separates builders from dreamers. Most side projects die in private. Yours is going public today.</p>
+
+    <h3>Morning: Final Polish</h3>
+
+    <p>Spend one to two hours on final cleanup. Fix any obvious visual issues. Test the signup flow on your phone. Write a clear onboarding message that new users see after signing up. Add a favicon and make sure the page title is correct. These small details signal professionalism.</p>
+
+    <h3>Afternoon: Ship It Everywhere</h3>
+
+    <ul>
+      <li><strong>Product Hunt:</strong> Schedule a launch for the next available day (they launch at midnight Pacific). Write a concise maker comment explaining why you built it and what problem it solves.</li>
+      <li><strong>Hacker News:</strong> Post a "Show HN" with a title that describes the tool, not the technology. "Show HN: I built a one-click invoice reminder tool for freelancers" is far better than "Show HN: Next.js + Supabase SaaS boilerplate."</li>
+      <li><strong>Twitter/X:</strong> Write a build-in-public thread. People love weekend build stories. Share what you built, why, how long it took, and what stack you used. Tag relevant community accounts.</li>
+      <li><strong>Reddit:</strong> Post in the subreddits where you found the original pain point. Be genuine and helpful, not promotional. Explain the problem you noticed, show that you built a free tool to solve it, and ask for feedback.</li>
+      <li><strong>Niche communities:</strong> Share directly in the Slack groups, Discord servers, or forums where your target audience hangs out. Frame it as "I built this for us" rather than "buy my product."</li>
+    </ul>
+
+    <p>Your goal on launch day is not revenue. It is <strong>feedback</strong>. You want 10 to 20 real people to use your product and tell you what they think. Paying users are a bonus at this stage. Learning is the priority.</p>
+
+    <div class="timeline-box">
+      <h3>Weekend Timeline Summary</h3>
+      <ul>
+        <li><strong>Friday 7-10 PM:</strong> Research pain points, validate idea, write one-sentence product definition</li>
+        <li><strong>Saturday 9-10 AM:</strong> Set up tech stack (Next.js, Supabase, Vercel, Stripe)</li>
+        <li><strong>Saturday 10 AM - 5 PM:</strong> Build the single core feature, deploy a working prototype</li>
+        <li><strong>Saturday 7-9 PM:</strong> Create landing page, connect Stripe billing, test signup flow</li>
+        <li><strong>Sunday 9-11 AM:</strong> Final polish, mobile testing, onboarding copy</li>
+        <li><strong>Sunday 12-6 PM:</strong> Launch on Product Hunt, Hacker News, Twitter, Reddit, niche communities</li>
+        <li><strong>Sunday Evening:</strong> Respond to every piece of feedback, note improvement ideas</li>
+      </ul>
+    </div>
+
+    <h2>After Launch: Iterate, Price, and Grow</h2>
+
+    <p>A successful weekend launch is the beginning, not the end. Here is how to handle the week after launch:</p>
+
+    <ul>
+      <li><strong>Talk to every early user.</strong> Send a personal message to anyone who signs up. Ask what they like, what confuses them, and what they wish it did. This is the most valuable data you will ever collect.</li>
+      <li><strong>Fix the top three complaints first.</strong> Do not add features. Fix friction. If people are confused by the onboarding, fix the onboarding. If the core feature is slow, make it faster.</li>
+      <li><strong>Adjust pricing based on feedback.</strong> If everyone says "this is great but I would not pay $19 for it," try $9. If everyone signs up for the paid plan immediately, you probably priced too low.</li>
+      <li><strong>Add features only when multiple users request the same thing.</strong> The temptation to build will be strong. Resist it until you see a clear pattern in user requests.</li>
+    </ul>
+
+    <h2>Common Mistakes to Avoid</h2>
+
+    <p>Having watched hundreds of weekend launches succeed and fail, these are the patterns that kill micro-SaaS products before they have a chance:</p>
+
+    <ul>
+      <li><strong>Building before validating.</strong> If you spend all of Saturday coding a solution nobody asked for, you have wasted the weekend. Friday night research is not optional.</li>
+      <li><strong>Scope creep.</strong> "While I am at it, I will also add..." is the most dangerous sentence in a weekend build. Every feature you add doubles the surface area for bugs and delays your launch.</li>
+      <li><strong>Perfectionism on design.</strong> Your landing page does not need custom illustrations. Your app does not need animations. Ship functional, not beautiful. You can hire a designer at $500 MRR.</li>
+      <li><strong>Not launching publicly.</strong> A product nobody knows about makes zero dollars. The launch is not optional. It is the entire point of the weekend.</li>
+      <li><strong>Ignoring pricing from day one.</strong> Free-only tools attract free-only users. Put up a paid tier immediately, even if it feels premature. You need to know if people will pay before you invest more time.</li>
+    </ul>
+
+    <h2>3 Micro-SaaS Success Stories Built Fast</h2>
+
+    <p>These are real products that started as weekend or short-sprint builds and grew into sustainable businesses:</p>
+
+    <h3>1. Plausible Analytics</h3>
+    <p>A privacy-focused alternative to Google Analytics. The founders started with a dead-simple MVP that tracked page views and nothing else. No cookie banners, no complex dashboards. That constraint became their selling point. It now generates over $100K in monthly recurring revenue.</p>
+
+    <h3>2. Carrd</h3>
+    <p>A one-page website builder created by a solo developer. The initial version let you build a simple personal landing page in minutes. No templates marketplace, no custom domains at first&mdash;just fast, clean, single-page sites. It now has over a million users and earns substantial revenue from its $19/year Pro plan.</p>
+
+    <h3>3. Buttondown</h3>
+    <p>An email newsletter tool built as a side project. The creator was frustrated with Mailchimp's bloat and built the simplest possible newsletter tool: write in Markdown, hit send. It launched with almost no features compared to competitors, but that minimalism attracted users who wanted simplicity. It has grown steadily for years as a profitable one-person operation.</p>
+
+    <p>Notice the pattern: none of these started with a large feature set. They all launched with <em>less</em> than the competition and won on focus, speed, and clarity of purpose.</p>
+
+    <!-- Ad before conclusion -->
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:inline-block;width:728px;height:90px"
+           data-ad-client="ca-pub-8767713037568144"
+           data-ad-slot="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <h2>The Bottom Line</h2>
+
+    <p>A weekend is enough time to validate an idea, build a working product, and put it in front of real users. It is not enough time to build something perfect, and that is exactly the point. Perfection is the enemy of launch. The builders who win are the ones who ship on Sunday, learn on Monday, and iterate all week.</p>
+
+    <p>You already have the skills. You have the tools. The only thing between you and a live micro-SaaS product is one focused weekend. Pick a pain point tonight, clear your Saturday, and build the smallest thing that could possibly work.</p>
+
+    <p>Then ship it. The rest is iteration.</p>
+
+  </div>
+</article>
+
+<footer>
+  <p>t0-be.com &mdash; Built for builders.</p>
+  <p style="margin-top: 8px;">&copy; 2026 t0-be. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

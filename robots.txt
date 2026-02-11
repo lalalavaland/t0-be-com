@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://t0-be.com/sitemap.xml
