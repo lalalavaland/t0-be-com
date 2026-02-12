@@ -1,0 +1,2 @@
+# www to root redirect
+https://www.t0-be.com/* https://t0-be.com/:splat 301
